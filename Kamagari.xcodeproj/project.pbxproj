@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		F71493901B37F2BB008A359E /* Kamagari.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F71493841B37F2BB008A359E /* Kamagari.framework */; };
-		F71493A31B37F386008A359E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F71493A11B37F386008A359E /* Info.plist */; };
-		F71493A41B37F386008A359E /* KamagariTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71493A21B37F386008A359E /* KamagariTests.swift */; };
 		F71493AB1B37F3B3008A359E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F71493A61B37F3B3008A359E /* Info.plist */; };
-		F71493AC1B37F3B3008A359E /* Kamagari.h in Headers */ = {isa = PBXBuildFile; fileRef = F71493A71B37F3B3008A359E /* Kamagari.h */; };
+		F71493AC1B37F3B3008A359E /* Kamagari.h in Headers */ = {isa = PBXBuildFile; fileRef = F71493A71B37F3B3008A359E /* Kamagari.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F71493B01B37F415008A359E /* AlertBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71493AF1B37F415008A359E /* AlertBuilder.swift */; };
+		F71493B21B37F96B008A359E /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71493B11B37F96B008A359E /* UIAlertControllerExtension.swift */; };
+		F73BBC2A1B37FACB00010E03 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F71493A11B37F386008A359E /* Info.plist */; };
+		F73BBC2B1B37FAEC00010E03 /* KamagariTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71493A21B37F386008A359E /* KamagariTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,8 @@
 		F71493A21B37F386008A359E /* KamagariTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KamagariTests.swift; sourceTree = "<group>"; };
 		F71493A61B37F3B3008A359E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F71493A71B37F3B3008A359E /* Kamagari.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kamagari.h; sourceTree = "<group>"; };
+		F71493AF1B37F415008A359E /* AlertBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertBuilder.swift; sourceTree = "<group>"; };
+		F71493B11B37F96B008A359E /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 			children = (
 				F71493A61B37F3B3008A359E /* Info.plist */,
 				F71493A71B37F3B3008A359E /* Kamagari.h */,
+				F71493AF1B37F415008A359E /* AlertBuilder.swift */,
+				F71493B11B37F96B008A359E /* UIAlertControllerExtension.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -179,7 +185,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F71493AB1B37F3B3008A359E /* Info.plist in Resources */,
-				F71493A31B37F386008A359E /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F73BBC2A1B37FACB00010E03 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +203,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F71493A41B37F386008A359E /* KamagariTests.swift in Sources */,
+				F71493B01B37F415008A359E /* AlertBuilder.swift in Sources */,
+				F71493B21B37F96B008A359E /* UIAlertControllerExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F73BBC2B1B37FAEC00010E03 /* KamagariTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +323,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Kamagari/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -330,7 +338,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Kamagari/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -349,7 +357,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = KamagariTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -362,7 +370,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = KamagariTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
