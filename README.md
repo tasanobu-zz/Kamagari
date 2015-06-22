@@ -23,9 +23,9 @@ AlertBuilder(title: "Question", message: "Are you sure where Kamagari is?", pref
     .kam_show(animated: true)
 ```
 
-<table rules="none">
-<td style="border-style:none;"><img src="ScreenShots/00.png"></td>
-<td style="border-style:none;"><img src="ScreenShots/01.png"></td>
+<table>
+<td><img src="ScreenShots/00.png"></td>
+<td><img src="ScreenShots/01.png"></td>
 </table>
 
 ## Requirements
