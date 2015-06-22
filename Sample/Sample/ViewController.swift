@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import Kamagari
 
-class ViewController: UIViewController {
+class ViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,5 +22,25 @@ class ViewController: UIViewController {
     }
 
 
+}
+
+extension ViewController: UITableViewDelegate {
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        if indexPath.row == 0 {
+            AlertBuilder(title: "Question", message: "Are you sure where Kamagari is?", preferredStyle: .Alert)
+                .addAction(title: "NO", style: .Cancel) { _ in }
+                .addAction(title: "YES", style: .Default) { _ in }
+                .build()
+                .kam_show(animated: true)
+        } else {
+            AlertBuilder(title: "Question", message: "Are you sure where Kamagari is?", preferredStyle: .ActionSheet)
+                .addAction(title: "NO", style: .Cancel) { _ in }
+                .addAction(title: "YES", style: .Default) { _ in }
+                .build()
+                .kam_show(animated: true)
+        }
+    }
 }
 

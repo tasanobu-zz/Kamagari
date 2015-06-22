@@ -12,16 +12,29 @@
 		F73BBC401B37FC8900010E03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73BBC3E1B37FC8900010E03 /* Main.storyboard */; };
 		F73BBC421B37FC8900010E03 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F73BBC411B37FC8900010E03 /* Images.xcassets */; };
 		F73BBC451B37FC8900010E03 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F73BBC431B37FC8900010E03 /* LaunchScreen.xib */; };
-		F73BBC511B37FC8900010E03 /* SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73BBC501B37FC8900010E03 /* SampleTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F73BBC4B1B37FC8900010E03 /* PBXContainerItemProxy */ = {
+		F73BBC891B38371200010E03 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F73BBC2D1B37FC8900010E03 /* Project object */;
+			containerPortal = F73BBC841B38371200010E03 /* Kamagari.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F71493841B37F2BB008A359E;
+			remoteInfo = Kamagari;
+		};
+		F73BBC8B1B38371200010E03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F73BBC841B38371200010E03 /* Kamagari.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F714938F1B37F2BB008A359E;
+			remoteInfo = KamagariTests;
+		};
+		F73BBC8E1B38375F00010E03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F73BBC841B38371200010E03 /* Kamagari.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = F73BBC341B37FC8900010E03;
-			remoteInfo = Sample;
+			remoteGlobalIDString = F71493831B37F2BB008A359E;
+			remoteInfo = Kamagari;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -33,20 +46,11 @@
 		F73BBC3F1B37FC8900010E03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F73BBC411B37FC8900010E03 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F73BBC441B37FC8900010E03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		F73BBC4A1B37FC8900010E03 /* SampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F73BBC4F1B37FC8900010E03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F73BBC501B37FC8900010E03 /* SampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTests.swift; sourceTree = "<group>"; };
+		F73BBC841B38371200010E03 /* Kamagari.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kamagari.xcodeproj; path = ../Kamagari.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F73BBC321B37FC8900010E03 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F73BBC471B37FC8900010E03 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,8 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				F73BBC371B37FC8900010E03 /* Sample */,
-				F73BBC4D1B37FC8900010E03 /* SampleTests */,
 				F73BBC361B37FC8900010E03 /* Products */,
+				F73BBC841B38371200010E03 /* Kamagari.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,7 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				F73BBC351B37FC8900010E03 /* Sample.app */,
-				F73BBC4A1B37FC8900010E03 /* SampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,21 +98,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F73BBC4D1B37FC8900010E03 /* SampleTests */ = {
+		F73BBC851B38371200010E03 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F73BBC501B37FC8900010E03 /* SampleTests.swift */,
-				F73BBC4E1B37FC8900010E03 /* Supporting Files */,
+				F73BBC8A1B38371200010E03 /* Kamagari.framework */,
+				F73BBC8C1B38371200010E03 /* KamagariTests.xctest */,
 			);
-			path = SampleTests;
-			sourceTree = "<group>";
-		};
-		F73BBC4E1B37FC8900010E03 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F73BBC4F1B37FC8900010E03 /* Info.plist */,
-			);
-			name = "Supporting Files";
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,29 +121,12 @@
 			buildRules = (
 			);
 			dependencies = (
+				F73BBC8F1B38375F00010E03 /* PBXTargetDependency */,
 			);
 			name = Sample;
 			productName = Sample;
 			productReference = F73BBC351B37FC8900010E03 /* Sample.app */;
 			productType = "com.apple.product-type.application";
-		};
-		F73BBC491B37FC8900010E03 /* SampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F73BBC571B37FC8900010E03 /* Build configuration list for PBXNativeTarget "SampleTests" */;
-			buildPhases = (
-				F73BBC461B37FC8900010E03 /* Sources */,
-				F73BBC471B37FC8900010E03 /* Frameworks */,
-				F73BBC481B37FC8900010E03 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F73BBC4C1B37FC8900010E03 /* PBXTargetDependency */,
-			);
-			name = SampleTests;
-			productName = SampleTests;
-			productReference = F73BBC4A1B37FC8900010E03 /* SampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -161,10 +139,6 @@
 				TargetAttributes = {
 					F73BBC341B37FC8900010E03 = {
 						CreatedOnToolsVersion = 6.3.2;
-					};
-					F73BBC491B37FC8900010E03 = {
-						CreatedOnToolsVersion = 6.3.2;
-						TestTargetID = F73BBC341B37FC8900010E03;
 					};
 				};
 			};
@@ -179,13 +153,35 @@
 			mainGroup = F73BBC2C1B37FC8900010E03;
 			productRefGroup = F73BBC361B37FC8900010E03 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F73BBC851B38371200010E03 /* Products */;
+					ProjectRef = F73BBC841B38371200010E03 /* Kamagari.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F73BBC341B37FC8900010E03 /* Sample */,
-				F73BBC491B37FC8900010E03 /* SampleTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F73BBC8A1B38371200010E03 /* Kamagari.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Kamagari.framework;
+			remoteRef = F73BBC891B38371200010E03 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F73BBC8C1B38371200010E03 /* KamagariTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KamagariTests.xctest;
+			remoteRef = F73BBC8B1B38371200010E03 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F73BBC331B37FC8900010E03 /* Resources */ = {
@@ -195,13 +191,6 @@
 				F73BBC401B37FC8900010E03 /* Main.storyboard in Resources */,
 				F73BBC451B37FC8900010E03 /* LaunchScreen.xib in Resources */,
 				F73BBC421B37FC8900010E03 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F73BBC481B37FC8900010E03 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,21 +206,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F73BBC461B37FC8900010E03 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F73BBC511B37FC8900010E03 /* SampleTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F73BBC4C1B37FC8900010E03 /* PBXTargetDependency */ = {
+		F73BBC8F1B38375F00010E03 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F73BBC341B37FC8900010E03 /* Sample */;
-			targetProxy = F73BBC4B1B37FC8900010E03 /* PBXContainerItemProxy */;
+			name = Kamagari;
+			targetProxy = F73BBC8E1B38375F00010E03 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -356,40 +337,6 @@
 			};
 			name = Release;
 		};
-		F73BBC581B37FC8900010E03 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sample.app/Sample";
-			};
-			name = Debug;
-		};
-		F73BBC591B37FC8900010E03 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sample.app/Sample";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -409,14 +356,7 @@
 				F73BBC561B37FC8900010E03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		F73BBC571B37FC8900010E03 /* Build configuration list for PBXNativeTarget "SampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F73BBC581B37FC8900010E03 /* Debug */,
-				F73BBC591B37FC8900010E03 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
