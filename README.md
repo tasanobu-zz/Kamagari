@@ -23,6 +23,11 @@ AlertBuilder(title: "Question", message: "Are you sure where Kamagari is?", pref
     .kam_show(animated: true)
 ```
 
+<table rules="none">
+<td><img src="ScreenShots/00.png"></td>
+<td><img src="ScreenShots/01.png"></td>
+</table>
+
 ## Requirements
 - iOS 8.0+
 - Xcode 6.3
