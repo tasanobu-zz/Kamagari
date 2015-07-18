@@ -25,6 +25,26 @@ public class AlertBuilder {
         return self
     }
     
+    public func setPopoverPresentationProperties(sourceView: UIView? = nil, sourceRect:CGRect? = nil, barButtonItem: UIBarButtonItem? = nil, permittedArrowDirections: UIPopoverArrowDirection? = nil) -> Self {
+        
+        if let poc = alertController.popoverPresentationController {
+            if let view = sourceView {
+                poc.sourceView = view
+            }
+            if let rect = sourceRect {
+                poc.sourceRect = rect
+            }
+            if let item = barButtonItem {
+                poc.barButtonItem = item
+            }
+            if let directions = permittedArrowDirections {
+                poc.permittedArrowDirections = directions
+            }
+        }
+        
+        return self
+    }
+    
     public func addAction(title: String = "", style: UIAlertActionStyle = .Default, handler: ((UIAlertAction!) -> Void) = { _ in }) -> Self {
         alertController.addAction(UIAlertAction(title: title, style: style, handler: handler))
         return self
