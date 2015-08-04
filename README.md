@@ -2,11 +2,11 @@ Kamagari
 ===
 [![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat
 )](https://developer.apple.com/swift)
-[![CocoaPods](https://img.shields.io/cocoapods/v/Future.svg)]()
+[![CocoaPods](https://img.shields.io/cocoapods/v/Kamagari.svg)]()
 [![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat
 )](http://mit-license.org)
-[![Issues](https://img.shields.io/github/issues/nghialv/Future.svg?style=flat
-)](https://github.com/nghialv/Future/issues?state=open)
+[![Issues](https://img.shields.io/github/issues/tasanobu/Kamagari.svg?style=flat
+)](https://github.com/tasanobu/Kamagari/issues?state=open)
 
 Simple UIAlertController builder class in Swift.
 
