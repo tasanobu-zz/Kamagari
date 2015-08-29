@@ -25,7 +25,7 @@ public class AlertBuilder {
         return self
     }
     
-    public func setPopoverPresentationProperties(sourceView: UIView? = nil, sourceRect:CGRect? = nil, barButtonItem: UIBarButtonItem? = nil, permittedArrowDirections: UIPopoverArrowDirection? = nil) -> Self {
+    public func setPopoverPresentationProperties(sourceView sourceView: UIView? = nil, sourceRect:CGRect? = nil, barButtonItem: UIBarButtonItem? = nil, permittedArrowDirections: UIPopoverArrowDirection? = nil) -> Self {
         
         if let poc = alertController.popoverPresentationController {
             if let view = sourceView {
@@ -45,7 +45,7 @@ public class AlertBuilder {
         return self
     }
     
-    public func addAction(title: String = "", style: UIAlertActionStyle = .Default, handler: ((UIAlertAction!) -> Void) = { _ in }) -> Self {
+    public func addAction(title title: String = "", style: UIAlertActionStyle = .Default, handler: ((UIAlertAction!) -> Void) = { _ in }) -> Self {
         alertController.addAction(UIAlertAction(title: title, style: style, handler: handler))
         return self
     }

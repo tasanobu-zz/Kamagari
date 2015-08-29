@@ -9,7 +9,7 @@
 import UIKit
 
 public extension UIAlertController {
-    public func kam_show(animated: Bool = true, completionHandler: (() -> Void)? = nil) {
+    public func kam_show(animated animated: Bool = true, completionHandler: (() -> Void)? = nil) {
         guard let rootVC = UIApplication.sharedApplication().keyWindow?.rootViewController else {
             return
         }
