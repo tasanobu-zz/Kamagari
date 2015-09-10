@@ -65,7 +65,7 @@ pod 'Kamagari'
 - Use git submodule
 
 ## Release Notes
-See <a href="https://github.com/tasanobu/Kamagari/blob/master/CHANGES.md">CHANGES.md</a>
+See https://github.com/tasanobu/Kamagari/releases
 
 ## License
 Kamagari is released under the MIT license. See LICENSE for details.
