@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'Kamagari'
-  s.version = '0.9.0'
+  s.version = '1.0.0'
   s.license = 'MIT'
   s.summary = 'Simple UIAlertController builder in Swift'
   s.homepage = 'https://github.com/tasanobu/Kamagari'
