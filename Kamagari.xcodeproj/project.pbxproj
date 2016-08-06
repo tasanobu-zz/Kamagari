@@ -7,26 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F71493901B37F2BB008A359E /* Kamagari.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F71493841B37F2BB008A359E /* Kamagari.framework */; };
 		F71493AC1B37F3B3008A359E /* Kamagari.h in Headers */ = {isa = PBXBuildFile; fileRef = F71493A71B37F3B3008A359E /* Kamagari.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F71493B01B37F415008A359E /* AlertBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71493AF1B37F415008A359E /* AlertBuilder.swift */; };
 		F71493B21B37F96B008A359E /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71493B11B37F96B008A359E /* UIAlertControllerExtension.swift */; };
-		F73BBC2B1B37FAEC00010E03 /* KamagariTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71493A21B37F386008A359E /* KamagariTests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		F71493911B37F2BB008A359E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F714937B1B37F2BB008A359E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F71493831B37F2BB008A359E;
-			remoteInfo = Kamagari;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F71493841B37F2BB008A359E /* Kamagari.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kamagari.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F714938F1B37F2BB008A359E /* KamagariTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KamagariTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F71493A11B37F386008A359E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F71493A21B37F386008A359E /* KamagariTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KamagariTests.swift; sourceTree = "<group>"; };
 		F71493A61B37F3B3008A359E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,14 +27,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F714938C1B37F2BB008A359E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F71493901B37F2BB008A359E /* Kamagari.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,7 +46,6 @@
 			isa = PBXGroup;
 			children = (
 				F71493841B37F2BB008A359E /* Kamagari.framework */,
-				F714938F1B37F2BB008A359E /* KamagariTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,24 +102,6 @@
 			productReference = F71493841B37F2BB008A359E /* Kamagari.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F714938E1B37F2BB008A359E /* KamagariTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F714939D1B37F2BB008A359E /* Build configuration list for PBXNativeTarget "KamagariTests" */;
-			buildPhases = (
-				F714938B1B37F2BB008A359E /* Sources */,
-				F714938C1B37F2BB008A359E /* Frameworks */,
-				F714938D1B37F2BB008A359E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F71493921B37F2BB008A359E /* PBXTargetDependency */,
-			);
-			name = KamagariTests;
-			productName = KamagariTests;
-			productReference = F714938F1B37F2BB008A359E /* KamagariTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -153,10 +113,6 @@
 				ORGANIZATIONNAME = "Kazunobu Tasaka";
 				TargetAttributes = {
 					F71493831B37F2BB008A359E = {
-						CreatedOnToolsVersion = 6.3.2;
-						LastSwiftMigration = 0800;
-					};
-					F714938E1B37F2BB008A359E = {
 						CreatedOnToolsVersion = 6.3.2;
 						LastSwiftMigration = 0800;
 					};
@@ -175,20 +131,12 @@
 			projectRoot = "";
 			targets = (
 				F71493831B37F2BB008A359E /* Kamagari */,
-				F714938E1B37F2BB008A359E /* KamagariTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F71493821B37F2BB008A359E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F714938D1B37F2BB008A359E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -207,23 +155,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F714938B1B37F2BB008A359E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F73BBC2B1B37FAEC00010E03 /* KamagariTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F71493921B37F2BB008A359E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F71493831B37F2BB008A359E /* Kamagari */;
-			targetProxy = F71493911B37F2BB008A359E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		F71493981B37F2BB008A359E /* Debug */ = {
@@ -355,43 +287,6 @@
 			};
 			name = Release;
 		};
-		F714939E1B37F2BB008A359E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.tasanobu.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		F714939F1B37F2BB008A359E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.tasanobu.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -409,15 +304,6 @@
 			buildConfigurations = (
 				F714939B1B37F2BB008A359E /* Debug */,
 				F714939C1B37F2BB008A359E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F714939D1B37F2BB008A359E /* Build configuration list for PBXNativeTarget "KamagariTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F714939E1B37F2BB008A359E /* Debug */,
-				F714939F1B37F2BB008A359E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
