@@ -9,14 +9,14 @@
 import UIKit
 
 public extension UIAlertController {
-    public func kam_show(animated animated: Bool = true, completionHandler: (() -> Void)? = nil) {
-        guard let rootVC = UIApplication.sharedApplication().keyWindow?.rootViewController else {
+    public func kam_show(animated: Bool = true, completionHandler: (() -> Void)? = nil) {
+        guard let rootVC = UIApplication.shared.keyWindow?.rootViewController else {
             return
         }
         var forefrontVC = rootVC
         while let presentedVC = forefrontVC.presentedViewController {
             forefrontVC = presentedVC
         }
-        forefrontVC.presentViewController(self, animated: animated, completion: completionHandler)
+        forefrontVC.present(self, animated: animated, completion: completionHandler)
     }
 }
