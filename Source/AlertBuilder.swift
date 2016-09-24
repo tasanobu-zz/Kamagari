@@ -45,12 +45,12 @@ public class AlertBuilder {
         return self
     }
     
-    public func addAction(title: String = "", style: UIAlertActionStyle = .default, handler: ((UIAlertAction!) -> Void) = { _ in }) -> Self {
+    public func addAction(title: String = "", style: UIAlertActionStyle = .default, handler: @escaping ((UIAlertAction!) -> Void) = { _ in }) -> Self {
         alertController.addAction(UIAlertAction(title: title, style: style, handler: handler))
         return self
     }
     
-    public func addTextFieldHandler(_ handler: ((UITextField!) -> Void) = { _ in }) -> Self {
+    public func addTextFieldHandler(_ handler: @escaping ((UITextField!) -> Void) = { _ in }) -> Self {
         alertController.addTextField(configurationHandler: handler)
         return self
     }
