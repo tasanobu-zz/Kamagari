@@ -54,14 +54,15 @@ if UIDevice.currentDevice().userInterfaceIdiom != .Pad {
 
 ## Requirements
 - iOS 8.0+
-- Xcode 7.0
+- Swift 3.0
+- Xcode 8.0
 
 ## Installation
 - Install with CocoaPods
 ```
 pod 'Kamagari'
 ```
-- Copyin all the files into your project
+- Copy in all the files into your project
 - Use git submodule
 
 ## Release Notes
