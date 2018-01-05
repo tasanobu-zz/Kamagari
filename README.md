@@ -48,8 +48,8 @@ The following sample codes shows how to use Kamagari in order to present UIAlert
 
 ## Requirements
 - iOS 8.0+
-- Swift 3.0
-- Xcode 8.0
+- Swift 4.0
+- Xcode 9.0
 
 ## Installation
 - Install with CocoaPods

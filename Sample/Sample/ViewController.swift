@@ -21,33 +21,29 @@ class ViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
-}
-// MARK: - UITableViewDelegate
-extension ViewController {
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         
         if indexPath.row == 0 {
-            AlertBuilder(title: "Question", message: "Are you sure where Kamagari is?", preferredStyle: .Alert)
-                .addAction(title: "NO", style: .Cancel) { _ in }
-                .addAction(title: "YES", style: .Default) { _ in }
+            AlertBuilder(title: "Question", message: "Are you sure where Kamagari is?", preferredStyle: .alert)
+                .addAction(title: "NO", style: .cancel) { _ in }
+                .addAction(title: "YES", style: .default) { _ in }
                 .build()
                 .kam_show(animated: true)
         } else {
-            if UIDevice.currentDevice().userInterfaceIdiom != .Pad {
+            if UIDevice.current.userInterfaceIdiom != .pad {
                 // Sample to show on iPad
-                AlertBuilder(title: "Question", message: "Are you sure where Kamagari is?", preferredStyle: .ActionSheet)
-                    .addAction(title: "NO", style: .Cancel) { _ in }
-                    .addAction(title: "YES", style: .Default) { _ in }
+                AlertBuilder(title: "Question", message: "Are you sure where Kamagari is?", preferredStyle: .actionSheet)
+                    .addAction(title: "NO", style: .cancel) { _ in }
+                    .addAction(title: "YES", style: .default) { _ in }
                     .build()
                     .kam_show(animated: true)
             } else {
                 // Sample to show on iPad
-                AlertBuilder(title: "Question", message: "Are you sure where Kamagari is?", preferredStyle: .ActionSheet)
-                    .addAction(title: "YES", style: .Default) { _ in }
-                    .addAction(title: "Not Sure", style: .Default) { _ in }
-                    .setPopoverPresentationProperties(sourceView: view, sourceRect: CGRectMake(0, 0, 100, 100), barButtonItem: nil, permittedArrowDirections: .Any)
+                AlertBuilder(title: "Question", message: "Are you sure where Kamagari is?", preferredStyle: .actionSheet)
+                    .addAction(title: "YES", style: .default) { _ in }
+                    .addAction(title: "Not Sure", style: .default) { _ in }
+                    .setPopoverPresentationProperties(sourceView: view, sourceRect: CGRect(x: 0, y: 0, width: 100, height: 100), barButtonItem: nil, permittedArrowDirections: .any)
                     .build()
                     .kam_show(animated: true)
             }
